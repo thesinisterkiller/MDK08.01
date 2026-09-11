@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #333;
+  color: #fff;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a:hover {
+  color: orange;
+}
+
+.phone {
+  color: orange;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card {
+  flex: 1 1 200px;
+  max-width: 260px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  margin: 10px 0;
+}
+
+.card p {
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-block h3 {
+  margin: 0 0 10px;
+  color: orange;
+}
+
+.footer-block a:hover {
+  color: orange;
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
